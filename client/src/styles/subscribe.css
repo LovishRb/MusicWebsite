@@ -1,0 +1,45 @@
+.subscribe-container{
+    color: rgb(245, 247, 246);
+    text-align: center;    
+    position: relative;
+}
+
+.subscribe-styling{
+    padding:5%;
+}
+/*  abhi image fix krni hai tab tak k liye isse aise hi lga do */
+/* .subscribe-container img{
+    
+    position: absolute;
+    left: 15%;
+    z-index: -1;
+} */
+.subscribe-header{
+    font-size:1.5rem;
+    color:antiquewhite;
+}
+.subscribe-content{
+    margin:2% 
+}
+
+.subscribe-button input{
+    border-radius: 45px;
+    border: 2px  solid whitesmoke;
+    margin: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: black;
+    color: aliceblue;
+}
+.subscribe-get-started{
+    border-radius:45px ;
+    border:2px solid white;
+    cursor: pointer;
+    padding:17px;
+    background-color: rgb(45, 123, 159);
+    color: white;
+    text-align: center;
+    
+}

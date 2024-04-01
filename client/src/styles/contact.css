@@ -1,0 +1,124 @@
+.contact-container{
+    color:blue;
+}
+
+.navbar-size-div{
+    height:78px;
+}
+.contact-container-header {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    /* height: 80vh; */
+    
+    color:antiquewhite;
+    font-size: 1.4rem;
+
+}
+.contact-container-header p {
+    color: aliceblue;
+}
+.contact-container-items{
+    margin: 3%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.contact-container-items p{
+    color: aliceblue;
+    font-size: 1.4rem;
+}
+.contact-container-items-form{
+    width: 40%;
+}
+
+.contact-container-items-form input , textarea{
+    margin:2%;
+    padding:2%;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    border: 2px solid white;
+    color: aliceblue;
+}
+.contact-container-items-form button{
+    margin:2%;
+    padding:2%;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    border: 2px solid white;
+    color: antiquewhite;
+    cursor: pointer;
+
+}
+.contact-container-items-form button:hover{
+    background-color: rgb(171, 251, 251);
+    color: black;
+    
+}
+textarea{
+    height: 20vh;
+    width: 40vh;
+}
+.contact-container-items-image{
+    width: 40%;
+
+}
+.contact-container-items-image img{ 
+    width: 100%;
+}
+
+@media (max-width: 1060px) and (min-width: 704px) {
+    .contact-container-header {
+        width: 60%;
+    }
+    .contact-container-items {
+        display: block; /* This might not be necessary */
+    }
+    .contact-container-items-form {
+        margin: auto;
+        width: 60%;
+        text-align: center;
+    }
+    .contact-container-items-image {
+        width: 60%;
+        margin: auto;
+    }
+}
+@media (max-width: 704px) and (min-width: 482px) {
+    .contact-container-header {
+        width: 80%;
+    }
+    .contact-container-items {
+        display: block; /* This might not be necessary */
+    }
+    .contact-container-items-form {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .contact-container-items-image {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 482px) and (min-width: 204px) {
+    .contact-container-header {
+        width: 95%;
+    }
+    .contact-container-items {
+        display: block; /* This might not be necessary */
+    }
+    .contact-container-items-form {
+        margin: auto;
+        width: 95%;
+        text-align: center;
+    }
+    .contact-container-items-image {
+        width: 95%;
+        margin: auto;
+    }
+    textarea{
+        width:35vw;
+    }
+}

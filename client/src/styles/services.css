@@ -1,0 +1,140 @@
+
+
+.services-header {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.services-container {
+    color: aliceblue;
+    margin: auto;
+    
+    
+}
+
+.services-container-list{
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: normal;
+    align-content: center;
+    list-style-type: none;
+    margin: 17px;
+}
+.services-list {
+    max-width: 25%; /* Set the width of each flex item */
+    /* for dynamic below two lines must be used */
+    /* margin: auto;
+    margin-bottom: 20px; */
+    
+    /* Add margin for spacing */
+    /* margin:10px; */
+    border: 2px  #fccb06;
+    border-radius: 20px;
+    color:black;
+    background: 
+    linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
+    transition: transform 2s ease-in-out;
+    transform: scale(0.9);
+    transform-origin: center;
+    /* this properties work for images */
+    /* background-blend-mode: darken; */
+    /* opacity: 1; */
+    
+    /* height: 30%; */
+
+    padding: 20px; 
+}
+.services-list:hover{
+    transform: scale(1.1);
+}
+
+
+.services-list a{
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+}
+.services-list button{
+    border:none;
+    cursor: pointer;
+    padding:3% 10% 3% 10%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+}
+.services-list button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* RESPONSIVENESS USING MEDIA QUERIES TO THE FULLEST */
+
+@media (max-width:900px) and (min-width:740px){
+
+    .services-container-list{
+        display:block;
+    }
+    .services-list{
+        margin: auto;
+        max-width:35%;
+    }
+    
+}
+@media (max-width:740px) and (min-width:600px){
+
+    .services-container-list{
+        display:block;
+    }
+    .services-list{
+        margin: auto;
+        max-width:45%;
+    }
+    
+}
+@media (max-width:600px) and (min-width:469px){
+
+    .services-container-list{
+        display:block;
+    }
+    .services-list{
+        margin: auto;
+        max-width:55%;
+    }
+    
+}
+@media (max-width:469px) and (min-width:369px){
+
+    .services-container-list{
+        display:block;
+    }
+    .services-list{
+        margin: auto;
+        max-width:65%;
+    }
+    
+}
+@media (max-width:369px) and (min-width:335px){
+
+    .services-container-list{
+        display:block;
+    }
+    .services-list{
+        margin: auto;
+        max-width:75%;
+    }
+    
+}
+@media (max-width:335px) {
+
+    .services-container-list{
+        display:block;
+    }
+    .services-list{
+        margin: auto;
+        max-width:85%;
+    }
+    
+}

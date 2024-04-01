@@ -1,0 +1,139 @@
+
+.about-container{
+    color:blue;
+   padding: 2% ;
+    position: relative;
+}
+.about-container::after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height:2px;
+    background-color: rgb(98, 95, 95); 
+}
+.navbar-size-div{
+    height:20vh;
+}
+.about-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width:40% */
+}
+.about-img{
+    width: 50%;
+}
+.about-img img{
+    height:50%;
+    width: 100%;
+
+}
+.about-item{
+    width: 50%;
+    color: antiquewhite;
+    font-size: 1.4rem;
+}
+.about-team{
+    color: bisque;
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
+}
+.owners{
+    display:flex;
+    justify-content: space-evenly;
+    color:antiquewhite;
+    /* align-items: center; */
+}
+.founder{
+    /* border:2px solid gray; */
+    width:40%;
+    text-align:center;
+}
+.founder p{
+    margin: 0 auto;
+}
+.founder h3{
+    margin: 0 auto;
+}
+.founder-img{
+    
+    width:40%;
+    margin: auto;
+
+}
+.founder-img img{
+    width:100%
+}
+.co-founder{
+    /* border:2px solid gray; */
+    width:40%;
+    text-align:center;
+    
+    
+}
+.co-founder p{
+    margin: 0 auto;
+}
+.co-founder h3{
+    margin: 0 auto;
+}
+.co-founder-img{
+    
+    width:40%;
+    margin: auto;
+}
+.co-founder-img img{
+    width:100%;
+}
+
+.team-management{
+    display: flex;
+    justify-content: space-evenly;
+    margin:5% 0;
+}
+
+
+@media (max-width:1024px)  {
+    .about-header{
+        display: block;
+    }
+    .about-img{
+        width:40%;
+        margin: auto;
+    }
+    .about-img img{
+        width:100%;
+    }
+    .about-item{
+        margin:auto;
+        width:80%;
+    }
+    .navbar-size-div{
+        height:15vh;
+    }
+}
+@media (max-width:768px) {
+    .owners{
+        display: block;
+    }
+    .founder{
+        margin: auto;
+        font-size: 1rem;
+    }
+    .founder p{
+        margin-bottom: 25%;
+    }
+    .co-founder{
+        margin: auto;
+    }
+    .co-founder p{
+        margin-bottom: 25%;
+    }
+    .team-management{
+        display:block;
+    }
+}
+

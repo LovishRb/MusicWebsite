@@ -1,0 +1,98 @@
+
+.navbar-size-div{
+    height:78px;
+}
+
+.register-container{
+    color:aliceblue;
+}
+.register-form{
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
+    margin:4%;
+    margin-bottom: 1%;
+}
+.register-form-header h1{
+    background:linear-gradient(45deg, rgb(72, 200, 160),#284761, #f79cae,rgb(32, 40, 48));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+}
+@keyframes gradient {
+    0% { background-position: 0 50%; }
+    20%{background-position:20% 50%;}
+    40%{background-position:40% 50%;}
+    60%{background-position:60% 50%;}
+    80%{background-position:80% 50%;}
+    100%{background-position:0% 50%;}
+    
+}
+.register-form-label{
+    margin:0.5% 0;
+}
+.register-form-label label{
+    font-size: 1.1rem;  
+    margin:auto;  
+}
+.register-container input{
+    width: 25%;
+    height: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(5, 5, 5);
+    color: aliceblue;
+    margin: 0.5% 0;
+    border: 2px solid rgb(68, 67, 67);
+    
+}
+.register-container input:focus{
+    outline: none;
+}
+.register-container input:hover{
+    cursor:text;
+}
+.register-form-username {
+    width:100%;   
+}
+
+
+.register-form-email{
+    width:100%;
+    
+}
+.register-form-password{
+    width:100%;
+    
+}
+.register-form-confirm-password{
+    width:100%;
+    
+}
+.register-form-button button{
+    background:linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
+    color: white;
+    border:none; 
+    border-radius: 30px;
+    height: 1.5rem;
+    margin: 2% 0;
+    width: 7%;
+    cursor: pointer;
+}
+
+.already-have-an-account h4{
+    margin-top:0;
+    margin-left:1%;
+}
+.already-have-an-account h4 a{
+    color: bisque;
+}
+.already-have-an-account h4 a:hover{
+    color: rgb(246, 69, 101);
+}
+
+.error-message{
+    color:red;
+}

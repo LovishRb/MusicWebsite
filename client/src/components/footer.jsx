@@ -90,10 +90,7 @@ function Footer() {
           </div>
             </>
           }
-             
-            
-        
-        
+ 
       </div>
       <div className="footer-copyright">
       <small>&copy; Copyright 2024 <b>

@@ -48,8 +48,11 @@ function Navbar() {
             <li className="nav-item">  
             <Link className={linkClassName} to="/contact" onClick={closeMenuOnMobile} reloadDocument>Contact</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item-without-text-deco">
+            <Link to="/register" onClick={closeMenuOnMobile} reloadDocument>
             <div className={`${linkClassName} ${buttonClassName}`} onClick={closeMenuOnMobile}>GetStarted</div>
+            </Link>
+              
             </li>
           </ul>
     )

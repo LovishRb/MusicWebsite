@@ -8,9 +8,11 @@ import Subscribe from './components/subscribe'
 import Footer from './components/footer'
 import Contact from './components/contact'
 import About from './components/about'
+import Register from './components/register'
 // import Exapmle from './components/exapmle'
 import './styles/App.css'
 import {Route,Routes,BrowserRouter} from 'react-router-dom'
+import LoginPage from './components/loginPage'
 function App() {
   return (
     <BrowserRouter>
@@ -28,8 +30,10 @@ function App() {
           <Subscribe/>
           </>
         }/>
-        <Route path='contact' element={<Contact/>}/> 
-        <Route path='about' element={<About/>}/> 
+        <Route path='/contact' element={<Contact/>}/> 
+        <Route path='/about' element={<About/>}/> 
+        <Route path='/loginpage' element={<LoginPage/>}/> 
+        <Route path='/register' element={<Register/>}/>
       </Routes>
       {/* <Exapmle/> */}
       <Footer/>

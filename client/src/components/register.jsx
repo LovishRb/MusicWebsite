@@ -9,16 +9,29 @@ function Register() {
     email: "",
     password: "",
   })
+
+  // I have used useState hook for 3 major purposes 
+  // 1) setting loginInfo
+  // 2) for getting error message if already created user exists
+  // 3) for getting success meassage if user gets created successfully
   const [loginInfo, setLoginInfo] = useState(initialLoginInfo);
+  const [error,setError]= useState("");
+  const [successMessage,setSuccessMessage] = useState("");
   // const [register, setRegister] = useState(true);
+
+
+  // for handling the change of value while entering the input field
   const handleChange = (e) => {
     const { name, value } = e.target;
     setLoginInfo((prev) => {
       return { ...prev, [name]: value };
     });
   };
-  const [error,setError]= useState("");
-  const [successMessage,setSuccessMessage] = useState("");
+
+  
+
+
+// handle submit for handling registeration process and fetch api from backend
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -91,7 +104,7 @@ function Register() {
             <input type="text" required />
         </div>
         </div> */}
-      
+      {/* for adding the error and successmessage in the frontend */}
       {error && <div className="error-message">{error}</div>}
       {successMessage && <div className="error-message">{successMessage}</div>}
         <div className="register-form-button"><button type='submit'>Register</button></div>

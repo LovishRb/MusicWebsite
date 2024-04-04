@@ -109,3 +109,9 @@
     width:25%;
     cursor: pointer;
 }
+.error-meassge{
+    color:red;
+}
+.success-message{
+    color:red;
+}

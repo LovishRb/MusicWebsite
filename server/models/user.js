@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
-const loginSchema = new Schema({
+const registerSchema = new Schema({
     username:{
         type:String,
         required:true,
@@ -16,7 +16,8 @@ const loginSchema = new Schema({
         type:String,
         required:true,
         trim:true
-    }
+    },
+    
 })
 
-module.exports = mongoose.model("login", loginSchema);
+module.exports = mongoose.model("register", registerSchema);

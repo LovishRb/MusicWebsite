@@ -111,7 +111,7 @@ function Register() {
       </form>
 
       <div className="already-have-an-account">
-        <h4>Already have an account? <Link to="/loginpage" reloadDocument>LogIn</Link></h4>
+        <h4>Already have an account? <Link to="/login" reloadDocument>LogIn</Link></h4>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ const errorHandlerMiddleware = require('./middleware/error_handler');
 const PORT = process.env.PORT || 3001;
 require('dotenv').config();
 const userRoutes = require('./routes/user'); // Assuming your routes file is named user.js
-
+const loginRoutes = require('./routes/login');
 const app = express();
 
 app.use(express.json());
@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 
 // Use user routes
 app.use("/api/v1", userRoutes);
-
+app.use("/api/v1/",loginRoutes)
 // Middleware that handles if a link is not available
 app.use(notFound);
 // Middleware that handles errors
